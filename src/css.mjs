@@ -305,4 +305,107 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 32px }
   font-family: inherit; font-size: 14px; resize: vertical;
 }
 .review-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px }
+
+/* Breadcrumbs */
+.breadcrumbs { display: flex; gap: 4px; align-items: center; font-size: 16px; margin-bottom: 12px; flex-wrap: wrap }
+.breadcrumbs a { color: #2f81f7; font-weight: 600 }
+.breadcrumbs .sep { color: #8b949e; margin: 0 4px }
+.breadcrumbs .leaf { color: #c9d1d9; font-weight: 600 }
+
+/* File viewer */
+.file-view {
+  background: #0d1117; border: 1px solid #30363d; border-radius: 6px;
+  overflow: hidden; margin-bottom: 16px;
+}
+.file-view .file-view-head {
+  background: #161b22; padding: 8px 16px; border-bottom: 1px solid #30363d;
+  display: flex; align-items: center; gap: 12px; font-size: 13px;
+}
+.file-view .file-view-head .meta { color: #8b949e; font-size: 12px }
+.file-view .file-view-head .actions { margin-left: auto; display: flex; gap: 6px }
+.file-view .code-table {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px;
+  line-height: 20px; width: 100%; border-collapse: collapse;
+}
+.file-view .code-table td { padding: 0 16px; vertical-align: top }
+.file-view .code-table td.ln {
+  color: #6e7681; text-align: right; user-select: none; width: 56px;
+  padding: 0 12px; border-right: 1px solid #21262d; font-size: 11px;
+}
+.file-view .code-table td.src { white-space: pre; color: #c9d1d9 }
+.file-view .code-table tr:hover td.ln { color: #c9d1d9 }
+
+/* Markdown rendered view */
+.md-view { padding: 24px 28px }
+.md-view h1, .md-view h2 { border-bottom: 1px solid #30363d; padding-bottom: 6px; margin-bottom: 12px }
+.md-view h1 { font-size: 26px } .md-view h2 { font-size: 20px } .md-view h3 { font-size: 16px; margin-top: 12px }
+.md-view p { margin-bottom: 10px }
+.md-view ul, .md-view ol { margin: 6px 0 12px 22px }
+.md-view pre {
+  background: #161b22; padding: 14px; border-radius: 6px;
+  border: 1px solid #30363d; font-family: ui-monospace, monospace;
+  font-size: 13px; overflow-x: auto; margin-bottom: 12px;
+}
+.md-view code { font-size: 12px }
+
+/* Syntax tokens */
+.tok-keyword  { color: #ff7b72 }
+.tok-string   { color: #a5d6ff }
+.tok-comment  { color: #8b949e; font-style: italic }
+.tok-number   { color: #79c0ff }
+.tok-function { color: #d2a8ff }
+
+/* Forms */
+.form-card {
+  background: #0d1117; border: 1px solid #30363d; border-radius: 6px;
+  padding: 16px; margin-bottom: 16px;
+}
+.form-card h2 { font-size: 20px; color: #f0f6fc; margin-bottom: 12px }
+.form-row { margin-bottom: 14px }
+.form-row label {
+  display: block; font-size: 13px; font-weight: 600; color: #c9d1d9;
+  margin-bottom: 6px;
+}
+.form-row input[type="text"], .form-row textarea, .form-row select {
+  width: 100%; background: #0d1117; color: #c9d1d9;
+  border: 1px solid #30363d; border-radius: 6px; padding: 8px 10px;
+  font-family: inherit; font-size: 14px;
+}
+.form-row textarea { min-height: 140px; resize: vertical; font-family: ui-monospace, monospace; font-size: 13px }
+.form-row .hint { color: #8b949e; font-size: 12px; margin-top: 4px }
+.form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px }
+
+/* Comments / timeline */
+.timeline { margin-top: 16px }
+.comment {
+  background: #0d1117; border: 1px solid #30363d; border-radius: 6px;
+  margin-bottom: 14px;
+}
+.comment .head {
+  background: #161b22; padding: 8px 14px; border-bottom: 1px solid #30363d;
+  display: flex; gap: 8px; align-items: center; font-size: 13px;
+  border-radius: 6px 6px 0 0;
+}
+.comment .head .author { color: #c9d1d9; font-weight: 600 }
+.comment .body { padding: 14px; color: #c9d1d9; white-space: pre-wrap }
+.timeline-event {
+  display: flex; gap: 10px; align-items: center; padding: 8px 0;
+  color: #8b949e; font-size: 13px;
+}
+.timeline-event .dot {
+  width: 10px; height: 10px; border-radius: 50%; background: #30363d;
+  display: inline-block;
+}
+.timeline-event .dot.green { background: #3fb950 }
+.timeline-event .dot.red   { background: #f85149 }
+.timeline-event .dot.blue  { background: #2f81f7 }
+
+/* Issue/PR sidebar sections */
+.side-section { padding: 10px 0; border-bottom: 1px solid #21262d }
+.side-section .title { font-weight: 600; color: #c9d1d9; font-size: 13px; margin-bottom: 6px; display: flex; justify-content: space-between }
+.side-section .title .gear { color: #8b949e; font-size: 12px }
+.side-section .empty { color: #8b949e; font-size: 12px }
+
+/* Branch dropdown row */
+.add-file-btn { background: #21262d; color: #c9d1d9; padding: 5px 10px; border: 1px solid #30363d; border-radius: 6px }
 `;
