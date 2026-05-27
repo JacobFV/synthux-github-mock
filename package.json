@@ -1,0 +1,18 @@
+{
+  "name": "@synthux-services/github-mock",
+  "version": "0.1.0",
+  "description": "GitHub.com mock service for the SynthUX virtual internet",
+  "private": true,
+  "type": "module",
+  "main": "src/server.mjs",
+  "bin": {
+    "github-mock": "src/server.mjs"
+  },
+  "scripts": {
+    "dev": "node src/server.mjs",
+    "start": "node src/server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
